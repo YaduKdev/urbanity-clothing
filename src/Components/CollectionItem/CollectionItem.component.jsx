@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { connect } from 'react-redux';
 import { addItem } from '../../Redux/cart/cart.actions';
 import './CollectionItem.styles.scss';
