@@ -1,0 +1,43 @@
+.menu-item {
+    .main-item {
+        position: relative;
+
+        .menu-item-image {
+            background-size: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+    
+        .item-content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            
+            .item-title {
+                color: white;
+                margin: 15px 25px;
+                padding: 0;
+                text-transform: uppercase;
+                font-family: cursive;
+            }
+            .item-button {
+                padding: 5px 10px;
+                border: 2px solid white;
+                font-family: 'Mulish', sans-serif;
+
+                &:hover {
+                    background-color: white;
+                    cursor: pointer;
+                }
+
+                .item-button-font {
+                    color: white;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EFEFE8FF;
+    font-family: 'Mulish', sans-serif;
+    height: 60px;
+    width: 100%;
+
+    .logo-container {
+        margin: 0 1em;
+
+        .logo {
+            font-family: cursive;
+            color: #FE0000FF;
+            margin: 0;
+            font-size: 2em;
+
+            &:hover {
+                color: #b42033;
+            }
+        }
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .option {
+            margin: 0 1em;
+        }
+        
+        .shop-option, .contact-option, .sign-in-option {
+            font-size: 1em;
+            color: black;
+
+            &:hover {
+                color: #68bd48;
+                cursor: pointer;
+            }
+        }
+    }
+}
