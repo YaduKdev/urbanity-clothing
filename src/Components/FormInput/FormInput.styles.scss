@@ -13,7 +13,6 @@ $main-color: black;
 
   .form-input {
     background: none;
-    // background-color: white;
     background-color: #EFEFE8FF;
     color: $sub-color;
     font-size: 18px;
@@ -50,6 +49,15 @@ $main-color: black;
 
     &.shrink {
       @include shrinkLabel();
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .group {
+
+    .form-input-label {
+      font-size: 12px;
     }
   }
 }

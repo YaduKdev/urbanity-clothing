@@ -4,10 +4,11 @@ import { createStructuredSelector } from 'reselect';
 import { selectShopDataForPreview } from '../../Redux/shop/shop.selectors';
 import MenuItem from '../MenuItem/MenuItem.component';
 
+
 const DirectoryMenu = ({shopData}) => {
     return (
     <div className='directory-menu'>   
-        {shopData.map(({id, ...otherProps})=>
+        {shopData.slice(0).reverse().map(({id, ...otherProps})=>
             <MenuItem key={id} {...otherProps} />
         )}
     </div>

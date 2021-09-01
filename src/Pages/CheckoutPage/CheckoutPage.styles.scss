@@ -42,3 +42,11 @@
     }
   }
   
+  @media screen and (max-width: 800px) {
+    .checkout-page {
+
+      .checkout-header {
+        display: none;
+      }
+    }
+  }

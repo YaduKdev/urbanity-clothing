@@ -1,40 +1,168 @@
 .menu-item {
-    .main-item {
-        position: relative;
+    margin: 100px auto;
 
-        .menu-item-image {
-            background-size: 100%;
-            position: absolute;
-            z-index: 1;
-        }
-    
+    .main-item {
+        display: flex;
+        flex-direction: column;
+
         .item-content {
-            position: absolute;
             display: flex;
             flex-direction: column;
-            
+            align-items: center;
+
             .item-title {
                 color: white;
-                margin: 15px 25px;
-                padding: 0;
                 text-transform: uppercase;
-                font-family: cursive;
             }
-            .item-button {
-                padding: 5px 10px;
-                border: 2px solid white;
-                font-family: 'Mulish', sans-serif;
 
-                &:hover {
-                    background-color: white;
-                    cursor: pointer;
-                }
+            .item-button {
+                border: 2px solid white;
+                padding: 5px 10px;
+                margin-bottom: 20px;
 
                 .item-button-font {
                     color: white;
+                }
 
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.mens {
+    margin: 100px 0;
+
+    .main-item {
+        display: flex;
+        align-self: left;
+        justify-self: left;
+
+        .menu-item-image {
+            width: 29.3vw;
+            height: 37vw;
+        }
+
+        .item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 20vw;
+            height: 250px;
+
+            .item-title {
+                color: white;
+                text-transform: uppercase;
+                margin-right: 20px;
+            }
+
+            .item-button {
+                border: 2px solid white;
+                padding: 5px 10px;
+                margin-bottom: 20px;
+                margin-right: 20px;
+
+                .item-button-font {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.womens {
+    margin: 100px 0;
+
+    .main-item {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: right;
+        align-items: flex-end;
+
+        .menu-item-image {
+            width: 29.3vw;
+            height: 37vw;
+        }
+
+        .item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            width: 20vw;
+            height: 250px;
+
+            .item-title {
+                color: white;
+                text-transform: uppercase;
+                margin-left: 20px;
+            }
+
+            .item-button {
+                border: 2px solid white;
+                padding: 5px 10px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+
+                .item-button-font {
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-item {
+        margin: 50px auto;
+    }
+
+    .mens, .womens {
+        margin: 50px auto;
+
+        .main-item {
+            display: flex;
+            flex-direction: column;
+
+            .menu-item-image {
+                width: 300px;
+                height: 375px;
+            }
+    
+            .item-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+    
+                .item-title {
+                    color: white;
+                    text-transform: uppercase;
+                }
+    
+                .item-button {
+                    border: 2px solid white;
+                    padding: 5px 10px;
+                    margin-bottom: 20px;
+    
+                    .item-button-font {
+                        color: white;
+                    }
+    
                     &:hover {
-                        cursor: pointer;
+                        background-color: white;
                     }
                 }
             }

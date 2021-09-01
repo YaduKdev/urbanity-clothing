@@ -24,10 +24,21 @@
   &.google-sign-in {
     background-color: #4285f4;
     color: white;
+    height: auto;
 
     &:hover {
       background-color: #357ae8;
       border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .custom-button {
+    margin-bottom: 20px;
+
+    &.google-sign-in {
+      width: 225px;
     }
   }
 }

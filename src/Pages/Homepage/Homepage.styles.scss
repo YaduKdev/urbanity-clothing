@@ -1,6 +1,8 @@
 .homepage {
+    margin-bottom: 200px;
+
     .banner-container {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     
         .banner {
             width: 100%;
@@ -8,11 +10,12 @@
             box-shadow: 2px 2px 4px rgb(0 0 0 / 0.2);
         }
     }
+}
 
-    .filler {
-        position: absolute;
-        top: 2300px;
-        height: 150px;
-        width: 100%;
+@media screen and (max-width: 800px) {
+    .homepage {
+        .banner-container {
+            display: none;
+        }
     }
 }

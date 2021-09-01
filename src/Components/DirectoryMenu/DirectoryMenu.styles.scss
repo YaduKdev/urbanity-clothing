@@ -1,3 +1,13 @@
 .directory-menu {
     margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .directory-menu {
+        flex-direction: column;
+    }
 }

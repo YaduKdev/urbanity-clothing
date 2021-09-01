@@ -6,7 +6,6 @@ import './CollectionItem.styles.scss';
 const CollectionItem = ({item, addItem}) => {
    const [color, setColor] = useState('#FFFF');
    const [font, setfont] = useState('#000');
-   const [opacity, setOpacity] = useState('95%');
    const [buttonBorder, setButtonBorder] = useState(true);
 
    const {name, imageUrl, price, background} = item;
@@ -18,23 +17,20 @@ const CollectionItem = ({item, addItem}) => {
     return (
         <div style={{
             background: `${background}`,
-            border: `10px solid ${background}`
+            border: `0.7em solid ${background}`
             }} className='collection-item'>
             <div className='collection-image' style= {{backgroundImage: `url(${imageUrl})`}} />
             <span onMouseEnter={()=>{
                     setColor(`${background}`);
                     setfont('#FFFF');
-                    setOpacity('100%');
                 }} 
                 onMouseOut={()=>{
                     setColor('#FFFF');
                     setfont('#000');
-                    setOpacity('95%');
                     }} 
                 style={{
                     background: `${color}`,
                     color: `${font}`,
-                    opacity: `${opacity}`,
                     border: `2px ${buttonBorder? 'outset': 'inset'} ${color}`
                     }} className='collection-button' onClick={() => {addItem(item); clickEffect()}}>ADD TO CART</span>
             <div className='collection-item-details'>

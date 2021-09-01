@@ -38,5 +38,53 @@
       padding-left: 12px;
       cursor: pointer;
     }
+
+    .remove-button-mobile {
+      background: red;
+      color: white;
+      padding: 5px 10px;
+      display: none;
+      margin-top: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
   
+  @media screen and (max-width: 800px) {
+    .checkout-item {
+      flex-direction: column;
+      font-size: 16px;
+
+      .image-container {
+        width: 50%;
+        padding-right: 0;
+      }
+
+      .name, .price {
+        display: flex;
+        justify-content: center;
+      }
+
+      .name {
+        text-align: center;
+      }
+
+      .quantity {
+        justify-content: center;
+      }
+
+      .name, .quantity, .price {
+        margin-top: 20px;
+      }
+
+      .remove-button {
+        display: none;
+      }
+
+      .remove-button-mobile {
+        display: block;
+      }
+    }
+  }

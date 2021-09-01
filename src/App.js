@@ -3,7 +3,7 @@ import ShopPage from './Pages/ShopPage/ShopPage.component';
 import SignInSignUpPage from './Pages/SignIn&SignUpPage/SignIn&SignUpPage.component';
 import CheckoutPage from './Pages/CheckoutPage/CheckoutPage.component';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Header from './Components/Header/header.component';
+import Header from './Components/Header/Header.component';
 import { auth, createUserProfileDocument } from './Firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './Redux/user/user.actions';

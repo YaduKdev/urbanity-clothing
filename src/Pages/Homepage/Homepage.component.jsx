@@ -1,18 +1,17 @@
 import React from 'react';
 import DirectoryMenu from '../../Components/DirectoryMenu/DirectoryMenu.component';
-import { Banner, BannerContainer, Filler } from './Homepage.styles';
+import './Homepage.styles.scss'
 
 class Homepage extends React.Component {
     render () {
         return (
             <div className='homepage'>
-                <BannerContainer>
-                <Banner src={process.env.PUBLIC_URL+'/Images/banner.jpg'} alt='banner' />
-                </BannerContainer>
+                <div className='banner-container'>
+                <img src={process.env.PUBLIC_URL+'/Images/banner.jpg'} className='banner' alt='banner' />
+                </div>
                 <div className='directory-menu-container'>
                     <DirectoryMenu />
                 </div>
-                <Filler />
             </div>
         )
     }
