@@ -1,21 +1,21 @@
 import './DirectoryMenu.styles.scss';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectShopDataForPreview } from '../../Redux/shop/shop.selectors';
+import { selectDirectorySections } from '../../Redux/directory/directory.selectors';
 import MenuItem from '../MenuItem/MenuItem.component';
 
 
-const DirectoryMenu = ({shopData}) => {
+const DirectoryMenu = ({ sections }) => {
     return (
     <div className='directory-menu'>   
-        {shopData.slice(0).reverse().map(({id, ...otherProps})=>
+        {sections.slice(0).reverse().map(({id, ...otherProps})=>
             <MenuItem key={id} {...otherProps} />
         )}
     </div>
 )}
 
 const mapStateToProps = createStructuredSelector({
-    shopData: selectShopDataForPreview
-});
+    sections: selectDirectorySections
+  });
 
 export default connect(mapStateToProps)(DirectoryMenu);
