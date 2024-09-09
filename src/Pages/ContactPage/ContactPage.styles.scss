@@ -1,0 +1,85 @@
+.contacts-container {
+  padding: 9rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #efefe8ff;
+  height: 900px;
+
+  .common-heading {
+    color: red;
+  }
+
+  .form-n-maps {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .container {
+      text-align: center;
+
+      .contact-form {
+        max-width: 50rem;
+        margin: auto;
+
+        .contact-inputs {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+
+          .input-fields {
+            width: 20rem;
+            height: 3rem;
+          }
+
+          input,
+          textarea {
+            background-color: #efefe8ff;
+            border: 1px solid black;
+            font-family: "Mulish", sans-serif;
+          }
+
+          input::placeholder {
+            padding-left: 10px;
+            font-size: 15px;
+          }
+
+          textarea::placeholder {
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+          }
+
+          input[type="submit"] {
+            transition: all 0.2s;
+            min-width: 165px;
+            width: auto;
+            height: 50px;
+            letter-spacing: 0.5px;
+            line-height: 50px;
+            padding: 0 35px 0 35px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-family: "Open Sans Condensed";
+            font-weight: bolder;
+            border: none;
+            cursor: pointer;
+            font-family: "Mulish", sans-serif;
+            background-color: #4285f4;
+            color: white;
+            height: auto;
+
+            &:hover {
+              background-color: #357ae8;
+              border: none;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
