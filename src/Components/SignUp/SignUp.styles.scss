@@ -1,14 +1,16 @@
 .sign-up {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    font-family: 'Mulish', sans-serif;
-  
-    .title {
-      font-family: cursive;
-      color: #b42033;
-    }
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  font-family: "Mulish", sans-serif;
+
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #b42033;
   }
+}
 
 @media screen and (max-width: 1200px) {
   .sign-up {

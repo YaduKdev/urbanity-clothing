@@ -1,24 +1,25 @@
 .sign-in {
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Mulish', sans-serif;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
 
-    .title {
-      font-family: cursive;
-      color: #009966;
-    }
-
-    .sign-in-buttons {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #009966;
   }
+
+  .sign-in-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 @media screen and (max-width: 1300px) {
   .sign-in {
-
     .title {
       font-size: 22px;
     }
