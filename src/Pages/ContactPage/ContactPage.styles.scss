@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #efefe8ff;
   height: 900px;
 
   .common-heading {
@@ -37,8 +36,7 @@
 
           input,
           textarea {
-            background-color: #efefe8ff;
-            border: 1px solid black;
+            border: 1px solid #008037;
             font-family: "Mulish", sans-serif;
           }
 

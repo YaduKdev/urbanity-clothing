@@ -1,50 +1,52 @@
 .collection-item {
-    position: relative;
+  position: relative;
+  width: 250px;
+  margin: 20px;
+
+  &:hover {
+    .collection-button {
+      cursor: pointer;
+      visibility: visible;
+    }
+  }
+
+  .collection-image {
     width: 250px;
-    margin: 20px;
-    box-shadow: 2px 1px 4px rgb(0 0 0 / 0.2);
+    height: 300px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 700ms ease-in-out;
 
     &:hover {
-
-        .collection-button {
-            cursor: pointer;
-            visibility: visible;
-        }
+      transform: scale(1.02);
     }
+  }
 
-    .collection-image {
-        width: 250px;
-        height: 300px;
-        background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
+  .collection-button {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    font-family: "Mulish", sans-serif;
+    box-shadow: 2px 1px 4px rgb(0 0 0 / 0.2);
+  }
+
+  .collection-item-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Mulish", sans-serif;
+
+    .collection-item-name {
+      margin: 3px;
+      padding: 0;
     }
-
-    .collection-button {
-        position: absolute;
-        top: 70%;
-        left: 25%;
-        padding: 10px 15px;
-        text-align: center;
-        visibility: hidden;
-        font-family: 'Mulish', sans-serif;
-        box-shadow: 2px 1px 4px rgb(0 0 0 / 0.2);
+    .collection-item-price {
+      margin: 3px;
+      padding: 0;
     }
-
-    .collection-item-details {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        font-family: 'Mulish', sans-serif;
-
-
-        .collection-item-name {
-            margin: 3px;
-            padding: 0;
-        }
-        .collection-item-price {
-            margin: 3px;
-            padding: 0;
-        }
-    }
+  }
 }
